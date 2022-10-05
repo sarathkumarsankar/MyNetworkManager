@@ -5,13 +5,13 @@ This package contains network source code
 How to use:
 
 
-Step 1. Set the base url: 
+## Step 1. Set the base url: 
 
 /* Example code snippet: */
 
 APIConstants.baseUrl = "{base url}"
 
-Step 2. Create url request with URLRequest: 
+## Step 2. Create url request with URLRequest: 
 
 /* Example code snippet: */
 
@@ -30,7 +30,7 @@ extension yourServiceEndpoints: HTTPRequest {
     }
 }
 
-Step 3. Call the networkmanager shared instance 
+## Step 3. Call the networkmanager shared instance 
 
 /* Example code snippet: */
 
