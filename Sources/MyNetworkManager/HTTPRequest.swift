@@ -30,7 +30,7 @@ public enum HTTPHeader {
 }
 
 // MARK: - http methods
-enum HTTPMethods: String {
+public enum HTTPMethods: String {
     case GET
     case POST
     case PUT
