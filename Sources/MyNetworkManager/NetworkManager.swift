@@ -8,7 +8,7 @@
 import Foundation
 
 /// Enum for possible error cases
-enum NetworkError: Error {
+public enum NetworkError: Error {
     case invalidURL
     case responseError
     case somethingWentWrong
@@ -45,7 +45,7 @@ public class NetworkManager {
     ///   - _urlRequest: Url request(headers, http method)
     ///   - type: Place holder for model type
     ///   - completionHandler: result types which includes success and failure data
-     func excute<T : Decodable>(with endpoint: HTTPRequest, type: T.Type, completionHandler: @escaping ((Result<T, NetworkError>) -> Void)) {
+    public func excute<T : Decodable>(with endpoint: HTTPRequest, type: T.Type, completionHandler: @escaping ((Result<T, NetworkError>) -> Void)) {
          
          var components = URLComponents()
          components.scheme = endpoint.scheme
@@ -76,7 +76,7 @@ public class NetworkManager {
     /// - Parameters:
     ///   - urlString: image url
     ///   - completionHandler: return type with image data and error
-    func downloadImage(withUrl urlString: String, completionHandler: @escaping ((Result<Data, NetworkError>) -> Void)) {
+    public func downloadImage(withUrl urlString: String, completionHandler: @escaping ((Result<Data, NetworkError>) -> Void)) {
         guard let url = URL(string: urlString) else {
             completionHandler(.failure(.invalidURL))
             return

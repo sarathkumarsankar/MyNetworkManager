@@ -44,7 +44,7 @@ public enum HTTPMethods: String {
 }
 
 // MARK: - HTTPRequest protocol
-protocol HTTPRequest {
+public protocol HTTPRequest {
     /// scheme
     var scheme: String { get }
     /// base URL
@@ -63,7 +63,7 @@ protocol HTTPRequest {
 }
 
 // MARK: - HTTPRequest protocol extension
-extension HTTPRequest {
+public extension HTTPRequest {
     
     /// default scheme will be https
     var scheme: String {
