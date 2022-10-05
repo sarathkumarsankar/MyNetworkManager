@@ -13,7 +13,7 @@ struct APIConstants {
 }
 
 // MARK: - HTTP Headers
-enum HTTPHeader {
+public enum HTTPHeader {
     case contentType(String)
     case accept(String)
     case authorization(String)

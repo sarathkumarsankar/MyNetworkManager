@@ -35,8 +35,8 @@ extension NetworkError {
 }
 
 /// Singleton class for Netwoking
-class NetworkManager {
-    static let shared = NetworkManager()
+public class NetworkManager {
+    public static let shared = NetworkManager()
     private init() {
     }    
     
